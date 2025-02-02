@@ -48,7 +48,7 @@ const contacts = [
 
     {
         app: "devto",
-        link: "https://https://dev.to/landiluigi746"
+        link: "https://dev.to/landiluigi746"
     }
 ];
 
