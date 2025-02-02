@@ -1,0 +1,181 @@
+* {
+    font-family: 'Montserrat';
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+}
+
+body {
+    background-image: linear-gradient(to top right, rgb(37, 36, 36), rgb(64, 64, 64));
+}
+
+#page-content {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+}
+
+#home {
+    padding: 15% 0;
+    text-align: center;
+}
+
+#home > p {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+#tech-stack {
+    text-align: center;
+}
+
+#tech-stack-container {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.tech-stack-icon {
+    width: 75px;
+    margin: 15px 0;
+}
+
+#projects {
+    margin: 15% 0;
+    text-align: center;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project {
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 8px rgb(37, 36, 36);
+    transition: all 0.75s ease-in-out;
+}
+
+.project:hover {
+    cursor: pointer;
+    padding: 12px;
+    box-shadow: 6px 6px 12px 12px rgb(64, 64, 64);
+}
+
+.project-title {
+    font-size: 25px;
+}
+
+.project-desc {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.project-tech-stack {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.project-tech-stack > li {
+    margin: 0 5px;
+}
+
+#about {
+    text-align: center;
+}
+
+#about > p {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+#contacts {
+    margin: 15% 0 40px;
+    text-align: center;
+}
+
+.contact-img {
+    width: 80px;
+    margin: 0 10px;
+}
+
+#navbar {
+    background-color: lightgray;
+    padding: 13px 0;
+    position: sticky;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px 6px rgb(64, 64, 64);
+}
+
+#navbar > a {
+    color: black;
+    margin: 0 10px;
+    transition: all 0.5s;
+}
+
+#navbar > a:hover {
+    color: blue;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 650px) {
+    #page-content {
+        max-width: 100%;
+    }
+
+    #home {
+        padding: 0;
+    }
+
+    #tech-stack-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #projects-container {
+        display: block;
+    }
+
+    #contacts-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #navbar > a {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 15px;
+        max-width: 100%;
+        margin: 0;
+    }
+}
