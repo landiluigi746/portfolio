@@ -1,2 +1,3 @@
 # portfolio
-My personal portfolio, made with HTML, CSS and JS
+
+This is my personal portfolio, made simply with HTML, CSS and JS.
