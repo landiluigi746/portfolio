@@ -7,6 +7,27 @@ export type ProjectProps = {
   websiteLink?: string;
 };
 
+export const ICONS_URL = "https://go-skill-icons.vercel.app/api/icons";
+
+export const techStack: Array<string> = [
+  "c",
+  "cpp",
+  "html",
+  "css",
+  "js",
+  "git",
+  "github",
+  "vscode",
+  "visualstudio",
+  "zed",
+  "cmake",
+  "postgresql",
+  "sqlite",
+  "windows",
+  "ubuntu",
+  "docker",
+];
+
 export const projects: Array<ProjectProps> = [
   {
     name: "Lufrak",
@@ -34,5 +55,15 @@ export const projects: Array<ProjectProps> = [
       "Caos Arcade is a videogame developed for the 2025 Phaser Game Jam. The theme was Chaos and the videogame revolves around the idea of the gaming world being discombobulated by a deity of chaos, Nixaroth.",
     madeWith: ["ts"],
     websiteLink: "https://caosarcade.web.app/",
+  },
+
+  {
+    name: "shurlx",
+    description:
+      "Simple URL shortener with backend written in C++, frontend int plain HTML, CSS and JS and SQLite as database",
+    imageURL:
+      "https://github.com/landiluigi746/shurlx/blob/master/screenshots/frontend.png?raw=true",
+    madeWith: ["cpp", "html", "css", "js", "docker", "sqlite"],
+    githubLink: "https://github.com/landiluigi746/shurlx",
   },
 ];
