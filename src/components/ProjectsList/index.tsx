@@ -8,7 +8,7 @@ function ProjectList() {
         My top projects
       </h2>
 
-      <div className="w-max mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="w-max mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 not-sm:gap-0">
         {projects.map((project) => (
           <ProjectCard key={project.name} {...project} />
         ))}
