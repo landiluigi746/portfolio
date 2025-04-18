@@ -3,7 +3,7 @@ import ProjectList from "./components/ProjectsList";
 
 function App() {
   return (
-    <div>
+    <div className="bg-zinc-950 min-h-screen">
       <ProjectList />
     </div>
   );
