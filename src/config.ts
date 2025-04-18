@@ -60,7 +60,7 @@ export const projects: Array<ProjectProps> = [
   {
     name: "shurlx",
     description:
-      "Simple URL shortener with backend written in C++, frontend int plain HTML, CSS and JS and SQLite as database",
+      "Simple URL shortener with backend written in C++, frontend in plain HTML, CSS and JS and SQLite as database",
     imageURL:
       "https://github.com/landiluigi746/shurlx/blob/master/screenshots/frontend.png?raw=true",
     madeWith: ["cpp", "html", "css", "js", "docker", "sqlite"],
