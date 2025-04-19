@@ -2,7 +2,7 @@ function About() {
   return (
     <div
       id="about"
-      className="text-zinc-100 max-w-1/3 mx-auto md:py-32 not-xl:max-w-4/5 not-md:py-16"
+      className="text-zinc-100 max-w-1/3 mx-auto md:py-32 not-xl:max-w-4/5 not-md:py-24"
     >
       <div>
         <h1 className="font font-extrabold text-5xl text-center mb-8">
