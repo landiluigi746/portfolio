@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About";
+import Contacts from "./components/Contacts";
 import ProjectList from "./components/ProjectsList";
 import TechStack from "./components/TechStack";
 
@@ -9,6 +10,7 @@ function App() {
       <About />
       <TechStack />
       <ProjectList />
+      <Contacts />
     </div>
   );
 }

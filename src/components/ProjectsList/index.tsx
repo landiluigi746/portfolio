@@ -13,6 +13,10 @@ function ProjectList() {
           <ProjectCard key={project.name} {...project} />
         ))}
       </div>
+
+      <h4 className="font font-extrabold text-zinc-100 text-center my-12">
+        Many more coming soon!
+      </h4>
     </>
   );
 }

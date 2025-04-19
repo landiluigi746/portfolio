@@ -7,6 +7,11 @@ export type ProjectProps = {
   websiteLink?: string;
 };
 
+export type ContactProps = {
+  name: string;
+  link: string;
+};
+
 export const ICONS_URL = "https://go-skill-icons.vercel.app/api/icons";
 
 export const techStack: Array<string> = [
@@ -52,7 +57,7 @@ export const projects: Array<ProjectProps> = [
   {
     name: "Caos Arcade",
     description:
-      "Caos Arcade is a videogame developed for the 2025 Phaser Game Jam. The theme was Chaos and the videogame revolves around the idea of the gaming world being discombobulated by a deity of chaos, Nixaroth.",
+      "Caos Arcade is a videogame developed for the 2025 Phaser Game Jam that took the 4th position out of 26 teams. The theme was Chaos and the videogame revolves around the idea of the gaming world being discombobulated by a deity of chaos, Nixaroth.",
     madeWith: ["ts"],
     websiteLink: "https://caosarcade.web.app/",
   },
@@ -65,5 +70,27 @@ export const projects: Array<ProjectProps> = [
       "https://github.com/landiluigi746/shurlx/blob/master/screenshots/frontend.png?raw=true",
     madeWith: ["cpp", "html", "css", "js", "docker", "sqlite"],
     githubLink: "https://github.com/landiluigi746/shurlx",
+  },
+];
+
+export const contacts: Array<ContactProps> = [
+  {
+    name: "github",
+    link: "https://github.com/landiluigi746",
+  },
+
+  {
+    name: "steam",
+    link: "https://steamcommunity.com/profiles/76561198389115124/",
+  },
+
+  {
+    name: "discord",
+    link: "http://discordapp.com/users/588073796401889297",
+  },
+
+  {
+    name: "devto",
+    link: "https://dev.to/landiluigi746",
   },
 ];
