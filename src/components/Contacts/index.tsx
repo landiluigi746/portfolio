@@ -2,7 +2,7 @@ import { contacts, ICONS_URL } from "../../config";
 
 function Contacts() {
   return (
-    <div className="pb-8">
+    <div id="contacts" className="pb-8">
       <h2 className="font font-extrabold text-zinc-100 text-center text-4xl pb-8">
         You can find me on
       </h2>

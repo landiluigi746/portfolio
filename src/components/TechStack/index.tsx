@@ -3,7 +3,10 @@ import { ICONS_URL, techStack } from "../../config";
 function TechStack() {
   return (
     // thanks https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/
-    <div className="text-zinc-100 max-w-1/3 mx-auto not-xl:max-w-4/5">
+    <div
+      id="tech-stack"
+      className="text-zinc-100 max-w-1/3 mx-auto not-xl:max-w-4/5"
+    >
       <h2 className="font font-extrabold text-4xl text-center">
         My Tech Stack
       </h2>

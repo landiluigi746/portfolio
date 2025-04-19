@@ -3,7 +3,7 @@ import { projects } from "../../config";
 
 function ProjectList() {
   return (
-    <>
+    <div id="projects">
       <h2 className="font font-extrabold text-zinc-100 text-center text-4xl pt-8 pb-8">
         My top projects
       </h2>
@@ -17,7 +17,7 @@ function ProjectList() {
       <h4 className="font font-extrabold text-zinc-100 text-center my-12">
         Many more coming soon!
       </h4>
-    </>
+    </div>
   );
 }
 
