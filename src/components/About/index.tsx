@@ -9,14 +9,15 @@ function About() {
           Hi, I'm Luigi Landi.
         </h1>
         <p className="font font-semibold">
-          I'm an italian 12th grade computer science student and aspiring
-          programmer who always looks forward to challenges and learning new
-          things. I like experimenting with different languages and building a
-          large varitety of projects, both individually and in group. Currently,
-          I am looking to improve my problem solving skills and start backend
-          development. I'm also eager to explore the possibilities of AI and how
-          it can be powerful. Looking forward to delving into these areas and
-          expanding my skills. Here you can see my tech stack and top projects.
+          I'm an italian 13th grade computer science student and aspiring
+          programmer with a passion for problem solving, learning, and building.
+          I enjoy experimenting with different technologies and creating a wide
+          variety of projects—both independently and as part of a team. Lately,
+          my main interests revolve around game development, backend development
+          and cybersecurity, especially software security, after reaching the
+          finals of the 2025 edition of CyberChallenge.IT, which also brought my
+          passion for CTF competitions. Here you can see my tech stack and top
+          projects.
         </p>
       </div>
     </div>
