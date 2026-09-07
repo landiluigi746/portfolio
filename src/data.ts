@@ -78,7 +78,7 @@ export const projects: Array<ProjectProps> = [
     name: "Caos Arcade",
     description:
       "Caos Arcade is a videogame developed for the 2025 Phaser Game Jam (4th place out of 26 teams). The theme was Chaos and the videogame revolves around the idea of the gaming world being discombobulated by a deity of chaos, Nixaroth.",
-    imageURL: "img/CaosArcade.png",
+    imageURL: "/portfolio/img/CaosArcade.png",
     madeWith: ["ts"],
     websiteLink: "https://caosarcade.web.app/",
   },
@@ -88,9 +88,9 @@ export const projects: Array<ProjectProps> = [
     description:
       "A lightweight, self-hostable URL shortener with a C++ htmx-based backend and SQLite database. Features Docker support for easy deployment, making it ideal for personal use or small-scale link management solutions.",
     imageURL:
-      "https://github.com/landiluigi746/shurlx/blob/master/screenshots/example.png?raw=true",
+      "https://github.com/landiluigi746/shurlx-old/blob/master/screenshots/example.png?raw=true",
     madeWith: ["cpp", "htmx", "tailwindcss", "docker", "sqlite"],
-    githubLink: "https://github.com/landiluigi746/shurlx",
+    githubLink: "https://github.com/landiluigi746/shurlx-old",
   },
 ];
 
