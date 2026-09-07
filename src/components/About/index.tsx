@@ -5,10 +5,10 @@ function About() {
       className="text-zinc-100 max-w-1/3 mx-auto md:py-32 not-xl:max-w-4/5 not-md:py-24"
     >
       <div>
-        <h1 className="font font-extrabold text-5xl text-center mb-8">
+        <h1 className="font-extrabold text-5xl text-center mb-8">
           Hi, I'm Luigi Landi.
         </h1>
-        <p className="font font-semibold">
+        <p className="font-semibold">
           I'm an italian 13th grade computer science student and aspiring
           programmer with a passion for problem solving, learning, and building.
           I enjoy experimenting with different technologies and creating a wide
