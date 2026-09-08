@@ -101,8 +101,8 @@ export const contacts: Array<ContactProps> = [
   },
 
   {
-    name: "steam",
-    link: "https://steamcommunity.com/profiles/76561198389115124/",
+    name: "proton",
+    link: "mailto:landiluigi@proton.me",
   },
 
   {
@@ -114,4 +114,17 @@ export const contacts: Array<ContactProps> = [
     name: "devto",
     link: "https://dev.to/landiluigi746",
   },
+
+  {
+    name: "instagram",
+    link: "https://instagram.com/luigi_landi_",
+  },
+];
+
+export const pages: Array<string> = [
+  "about",
+  "skills",
+  "projects",
+  "experience",
+  "contacts",
 ];

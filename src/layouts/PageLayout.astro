@@ -3,6 +3,12 @@ import "../styles/global.css";
 import { Font } from "astro:assets";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -12,11 +18,15 @@ import Footer from "../components/Footer.astro";
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <Font cssVariable="--font-google-sans-flex" />
-        <title>Luigi Landi's Portfolio</title>
+        <title>{title}</title>
     </head>
-    <body class="bg-zinc-950 min-h-screen">
+    <body class="min-h-svh bg-zinc-950">
         <Navbar />
-        <slot />
+        <div
+            class="w-[70svw] flex flex-col items-center justify-center mx-auto"
+        >
+            <slot />
+        </div>
         <Footer />
     </body>
 </html>
