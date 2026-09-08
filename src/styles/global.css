@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme inline {
+    --font-sans: var(--font-google-sans-flex), sans-flex;
+}
+
 :root {
     font-synthesis: none;
     text-rendering: optimizeLegibility;

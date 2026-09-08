@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -10,4 +10,14 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  fonts: [
+    {
+      provider: fontProviders.fontsource(),
+      name: "Google Sans Flex",
+      cssVariable: "--font-google-sans-flex",
+      weights: ["100 900"], // ← range string, not individual numbers
+      styles: ["normal"],
+    },
+  ],
 });

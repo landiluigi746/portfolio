@@ -1,7 +1,8 @@
 ---
-import Footer from "../components/Footer.astro";
-import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
+import { Font } from "astro:assets";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -10,15 +11,10 @@ import "../styles/global.css";
         <link rel="icon" href="/portfolio/favicon.ico" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD,ROND@6..144,-10..0,25..151,1..1000,0..100,0..100&display=swap"
-            rel="stylesheet"
-        />
+        <Font cssVariable="--font-google-sans-flex" />
         <title>Luigi Landi's Portfolio</title>
     </head>
-    <body class="font-[Google_Sans_Flex] bg-zinc-950 min-h-screen">
+    <body class="bg-zinc-950 min-h-screen">
         <Navbar />
         <slot />
         <Footer />
