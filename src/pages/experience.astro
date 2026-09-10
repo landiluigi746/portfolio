@@ -1,0 +1,16 @@
+---
+import ExperienceCard from "../components/ExperienceCard.astro";
+import { experiences } from "../data/experiences";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout title="Experience - Luigi Landi">
+    <div class="w-full flex flex-col items-start gap-y-6 my-12">
+        <h1 class="text-zinc-100 text-4xl font-extrabold">My experience</h1>
+        <div class="w-full flex flex-col items-center border-y border-y-zinc-600">
+            {experiences.map((experience) => (
+                <ExperienceCard experience={experience} />
+            ))}
+        </div>
+    </div>
+</PageLayout>
