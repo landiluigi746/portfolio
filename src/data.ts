@@ -122,6 +122,7 @@ export const contacts: Array<ContactProps> = [
 ];
 
 export const pages: Array<string> = [
+  "home",
   "about",
   "skills",
   "projects",

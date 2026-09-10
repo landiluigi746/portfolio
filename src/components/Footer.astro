@@ -6,13 +6,11 @@ import { contacts, ICONS_URL } from "../data";
     <div class="w-[70svw] flex flex-row items-center justify-between mx-auto">
         <h2 class="text-zinc-100">Copyright © 2026 Luigi Landi.</h2>
         <div class="flex flex-row items-center gap-x-4">
-            {
-                contacts.map((contact) => (
-                    <a href={contact.link} class="w-8 h-8">
-                        <img src={ICONS_URL + "?i=" + contact.name} />
-                    </a>
-                ))
-            }
+            {contacts.map((contact) => (
+                <a href={contact.link} target="_blank" class="w-8 h-8">
+                    <img src={ICONS_URL + "?i=" + contact.name} />
+                </a>
+            ))}
         </div>
     </div>
 </div>
