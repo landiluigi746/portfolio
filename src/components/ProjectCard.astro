@@ -1,57 +1,49 @@
 ---
-import { ICONS_URL } from "../data";
-import type { ProjectProps } from "../data";
+import type { ProjectProps } from "../data/products";
 
 interface Props {
     project: ProjectProps;
 }
 
 const { project } = Astro.props;
-const useGrid = project.madeWith.length >= 3;
 ---
 
-<div class="w-fit bg-zinc-900 text-zinc-100 outline-1 outline-zinc-600 rounded-2xl hover:bg-neutral-800 hover:scale-105 not-sm:scale-90 transition-all">
+<div class="flex flex-col gap-y-2 rounded-lg border border-zinc-800 bg-neutral-950 transition-all duration-500 hover:bg-neutral-900 hover:-translate-y-2">
     <img
-        class="w-96 max-h-60 object-cover object-top-left rounded-t-2xl not-sm:w-svw border-b border-zinc-600"
         src={project.imageURL}
+        alt={project.name}
+        class="h-64 aspect-auto object-cover rounded-t-lg border-b border-zinc-800"
     />
-
-    <div class="w-96 mt-4 not-sm:w-svw">
-        <h3 class="font font-extrabold text-3xl text-center">{project.name}</h3>
-        <p class="font font-semibold mx-4 mt-4 text-justify">
-            {project.description}
-        </p>
-    </div>
-
-    <div class="flex flex-col justify-center items-center my-2">
-        <h3 class="font-bold text-lg mb-2">Made with:</h3>
-
-        <div class={`${useGrid ? "grid grid-cols-3" : "flex flex-row"} gap-3`}>
-            {project.madeWith.map((elem) => (
-                <img src={ICONS_URL + "?i=" + elem} />
+    <div class="flex flex-col gap-y-2 px-2 py-2">
+        <h3 class="text-zinc-100 font-semibold">{project.name}</h3>
+        <p class="text-zinc-400 text-sm">{project.description}</p>
+        <div class="flex flex-row items-center gap-x-2">
+            {project.tags.map((tag) => (
+                <p class="text-zinc-100 text-xs px-1.5 py-1 rounded-lg border border-zinc-800 bg-neutral-800">
+                    {tag}
+                </p>
             ))}
         </div>
-    </div>
+        <div class="flex flex-row items-center gap-x-2">
+            {project.githubLink && (
+                <a
+                    href={project.githubLink}
+                    target="_blank"
+                    class="text-zinc-100 font-medium px-3.5 py-2 rounded-lg border border-zinc-800 transition-all duration-500 hover:text-zinc-950 hover:bg-zinc-100"
+                >
+                    Github Link
+                </a>
+            )}
 
-    <div class="flex flex-row justify-center items-center mt-2 mb-2">
-        {project.githubLink && (
-            <a
-                href={project.githubLink}
-                class="font font-semibold bg-green-700 rounded-2xl text-slate-50 shadow-sm transition-all hover:shadow-lg hover:bg-green-800 hover:scale-105 p-2 m-2"
-                target="_blank"
-            >
-                Github Link
-            </a>
-        )}
-
-        {project.websiteLink && (
-            <a
-                href={project.websiteLink}
-                class="font font-semibold bg-green-700 rounded-2xl text-slate-50 shadow-sm transition-all hover:shadow-lg hover:bg-green-800 hover:scale-105 p-2 m-2"
-                target="_blank"
-            >
-                Website Link
-            </a>
-        )}
+            {project.websiteLink && (
+                <a
+                    href={project.websiteLink}
+                    target="_blank"
+                    class="text-zinc-100 font-medium px-3.5 py-2 rounded-lg border border-zinc-800 transition-all duration-500 hover:text-zinc-950 hover:bg-zinc-100"
+                >
+                    🌐 Live
+                </a>
+            )}
+        </div>
     </div>
 </div>

@@ -16,7 +16,7 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "Google Sans Flex",
       cssVariable: "--font-google-sans-flex",
-      weights: ["100 900"], // ← range string, not individual numbers
+      weights: ["100 900"],
       styles: ["normal"],
     },
   ],

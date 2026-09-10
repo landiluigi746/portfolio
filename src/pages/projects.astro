@@ -1,0 +1,16 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+import { projects } from "../data/products";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout title="Projects - Luigi Landi">
+    <div class="w-full flex flex-col items-start gap-y-6 my-12">
+        <h1 class="text-zinc-100 text-4xl font-extrabold">My projects</h1>
+        <div class="grid grid-cols-3 gap-6">
+            {projects.map((project) => (
+                <ProjectCard project={project} />
+            ))}
+        </div>
+    </div>
+</PageLayout>

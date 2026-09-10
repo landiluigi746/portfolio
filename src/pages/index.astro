@@ -1,10 +1,12 @@
 ---
+import { featuredProjects } from "../data/products";
 import PageLayout from "../layouts/PageLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <PageLayout title="Luigi Landi's Portoflio">
     <div class="h-[92svh] flex flex-col items-center justify-center gap-6">
-        <h1 class="text-zinc-100 font-extrabold text-7xl text-center">
+        <h1 class="text-zinc-100 font-extrabold text-7xl">
             Hi, I'm Luigi Landi.
         </h1>
         <p class="text-zinc-600 font-semibold">
@@ -23,6 +25,14 @@ import PageLayout from "../layouts/PageLayout.astro";
             >
                 View Experience
             </a>
+        </div>
+    </div>
+    <div class="w-full flex flex-col items-start gap-6">
+        <h2 class="text-zinc-100 font-bold text-3xl">Top projects</h2>
+        <div class="grid grid-cols-3 gap-x-6">
+            {featuredProjects.map((project) => (
+                <ProjectCard project={project} />
+            ))}
         </div>
     </div>
 </PageLayout>
