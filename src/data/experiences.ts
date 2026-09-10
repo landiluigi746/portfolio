@@ -40,3 +40,5 @@ export const experiences: ExperienceProps[] = [
     position: "4th place",
   },
 ];
+
+export const featuredExperiences = [experiences[0], experiences[2]];
