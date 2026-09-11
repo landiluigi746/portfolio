@@ -1,6 +1,8 @@
 ---
 import EducationCard from "../components/EducationCard.astro";
+import TechStackCard from "../components/TechStackCard.astro";
 import { education } from "../data/education";
+import { techStack } from "../data/tech_stack";
 import PageLayout from "../layouts/PageLayout.astro";
 ---
 
@@ -32,6 +34,20 @@ import PageLayout from "../layouts/PageLayout.astro";
             <div class="w-full flex flex-col items-start border-y border-y-zinc-600">
                 {education.map((educationItem) => (
                     <EducationCard education={educationItem} />
+                ))}
+            </div>
+        </div>
+        <div class="w-full flex flex-col gap-y-6 items-start">
+            <h2 class="text-zinc-100 text-3xl font-extrabold">My Tech Stack</h2>
+            <p class="text-zinc-100 text-justify">
+                During my developer journey (~2.5 years), I came across several
+                technologies in order to develop my projects, and I'm always
+                open to trying new workflows. These are just some of the
+                technologies I like to work with.
+            </p>
+            <div class="w-full grid grid-cols-4 justify-start items-center gap-x-2 gap-y-2">
+                {techStack.map((techStackItem) => (
+                    <TechStackCard techStackItem={techStackItem} />
                 ))}
             </div>
         </div>
