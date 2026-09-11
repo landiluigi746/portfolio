@@ -20,4 +20,8 @@ export default defineConfig({
       styles: ["normal"],
     },
   ],
+
+  server: {
+    allowedHosts: ["fda2-151-77-113-59.ngrok-free.app"],
+  },
 });
