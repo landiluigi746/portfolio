@@ -1,0 +1,62 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout title="Get in touch - Luigi Landi">
+    <div class="w-full flex flex-col items-start gap-y-6 my-12">
+        <h1 class="text-zinc-100 text-4xl font-extrabold">Get in touch</h1>
+        <div class="w-full grid grid-cols-2 gap-x-6">
+            <div class="flex flex-col items-start gap-y-4">
+                <h2 class="text-zinc-100 text-2xl font-bold">
+                    Send an email to{" "}
+                    <a
+                        href="mailto:landiluigi@proton.me"
+                        class="hover:underline"
+                    >
+                        landiluigi@proton.me
+                    </a>{" "}
+                </h2>
+                <p class="text-zinc-100 text-justify">
+                    Whether you have a question or want to work together, I'm
+                    always open to new opportunities. Need a new website or app,
+                    and you want to get started? Email me with this form and
+                    I'll be happy to help you!
+                </p>
+            </div>
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="flex flex-col gap-y-4"
+            >
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="4394d434-bb34-4df2-a8bb-d6836892278d"
+                />
+                <input
+                    type="text"
+                    placeholder="Your name"
+                    required
+                    class="text-zinc-100 px-4 py-2 rounded-lg border border-zinc-600 bg-neutral-900"
+                />
+                <input
+                    type="email"
+                    placeholder="Your email"
+                    required
+                    class="text-zinc-100 px-4 py-2 rounded-lg border border-zinc-600 bg-neutral-900"
+                />
+                <textarea
+                    placeholder="Your message"
+                    required
+                    class="h-48 text-zinc-100 px-4 py-2 rounded-lg border border-zinc-600 bg-neutral-900"
+                ></textarea>
+                <button
+                    type="submit"
+                    class="text-zinc-100 px-4 py-2 rounded-lg border border-zinc-600 bg-neutral-900 transition-all duration-500 hover:text-zinc-950 hover:bg-zinc-100 hover:cursor-pointer"
+                >
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+</PageLayout>
