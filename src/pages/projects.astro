@@ -5,9 +5,11 @@ import PageLayout from "../layouts/PageLayout.astro";
 ---
 
 <PageLayout title="Projects - Luigi Landi">
-    <div class="w-full flex flex-col items-start gap-y-6 my-12">
-        <h1 class="text-zinc-100 text-4xl font-extrabold">My projects</h1>
-        <div class="grid grid-cols-3 gap-6">
+    <div class="w-full flex flex-col items-start gap-y-6 my-6 md:my-12">
+        <h1 class="text-zinc-100 text-3xl font-extrabold md:text-4xl">
+            My projects
+        </h1>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
                 <ProjectCard project={project} />
             ))}

@@ -7,10 +7,12 @@ import PageLayout from "../layouts/PageLayout.astro";
 ---
 
 <PageLayout title="About - Luigi Landi">
-    <div class="w-full flex flex-col items-start gap-y-12 my-12">
-        <div class="flex flex-col gap-y-6 items-start">
-            <h1 class="text-zinc-100 text-4xl font-extrabold">About me</h1>
-            <p class="text-zinc-100 text-justify">
+    <div class="w-full flex flex-col items-start gap-y-12 my-6 md:my-12">
+        <div class="flex flex-col gap-y-4 items-start md:gap-y-6">
+            <h1 class="text-zinc-100 text-3xl font-extrabold md:text-4xl">
+                About me
+            </h1>
+            <p class="text-zinc-100 text-sm text-justify md:text-base">
                 I'm an italian 1st year computer science student at University
                 of Salerno and aspiring programmer with a passion for problem
                 solving, learning, and building. I enjoy experimenting with
@@ -29,23 +31,27 @@ import PageLayout from "../layouts/PageLayout.astro";
                 management and software security.
             </p>
         </div>
-        <div class="w-full flex flex-col gap-y-6 items-start">
-            <h2 class="text-zinc-100 text-3xl font-extrabold">Education</h2>
+        <div class="w-full flex flex-col gap-y-4 items-start md:gap-y-6">
+            <h2 class="text-zinc-100 text-2xl font-extrabold md:text-3xl">
+                Education
+            </h2>
             <div class="w-full flex flex-col items-start border-y border-y-zinc-600">
                 {education.map((educationItem) => (
                     <EducationCard education={educationItem} />
                 ))}
             </div>
         </div>
-        <div class="w-full flex flex-col gap-y-6 items-start">
-            <h2 class="text-zinc-100 text-3xl font-extrabold">My Tech Stack</h2>
+        <div class="w-full flex flex-col gap-y-4 items-start md:gap-y-6">
+            <h2 class="text-zinc-100 text-2xl font-extrabold md:text-3xl">
+                My Tech Stack
+            </h2>
             <p class="text-zinc-100 text-justify">
                 During my developer journey (~2.5 years), I came across several
                 technologies in order to develop my projects, and I'm always
                 open to trying new workflows. These are just some of the
                 technologies I like to work with.
             </p>
-            <div class="w-full grid grid-cols-4 justify-start items-center gap-x-2 gap-y-2">
+            <div class="w-full grid grid-cols-2 justify-start items-center gap-x-2 gap-y-2 sm:grid-cols-3 lg:grid-cols-4">
                 {techStack.map((techStackItem) => (
                     <TechStackCard techStackItem={techStackItem} />
                 ))}
